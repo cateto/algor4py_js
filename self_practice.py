@@ -52,3 +52,46 @@ a = int(10)
 r = bin(a)
 cpl(r)
 
+#############################
+
+a = list()
+for i in range(10):
+    a.append(int(input()))
+dif = 99
+for i in range(10):
+    if(a[i]>33):
+        t = a[i] - 33
+    else:
+        t = 33 - a[i]
+    if (t<=dif):
+        dif = t
+        r = f"dif is {dif}, value is {a[i]}"
+        print(r)
+print("final result :"+r)
+        
+
+#############################
+
+def init():
+    lst = [ 0 ]
+    for i in range(1,5):
+        lst.append(lst[i - 1]+i)
+    return lst
+
+def sort(a):
+    for i in range(1, 5):
+        j = i - 1
+        k = a[i]
+        while(j >= 0 and a[j] < k):
+            a[j+1] = a[j]
+            j -= 1
+        a[j+1] = k
+        
+a = init()
+sort(a)
+for i in a:
+    print(i, end =' ')
+    
+############################# 삽입정렬
+
+
