@@ -1,0 +1,6 @@
+print(hash('kim'))
+print(hash('hello'))
+print(hash('kate'))
+print(hash('luke'))
+print(hash('judy'))
+print(hash('null'))
